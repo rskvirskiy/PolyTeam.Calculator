@@ -5,27 +5,33 @@ using System.Text;
 
 namespace PolyTeam.Calculator
 {
-    public class CalculatorEngine : ICalculatorEngine
+    public class CalculatorEngine
 
     {
+        public int answer;
+
         public int Add(int leftOperand,int rightOperand)
         {
-            return leftOperand + rightOperand;
+            this.answer = leftOperand + rightOperand;
+            return answer;
         }
 
         public int Substract(int leftOperand,int rightOperand)
         {
-            return leftOperand-rightOperand;
+            this.answer = leftOperand - rightOperand;
+            return answer;
         }
 
         public int Multiply(int leftOperand, int rightOperand)
         {
-            return leftOperand*rightOperand;
+            this.answer = leftOperand * rightOperand;
+            return answer;
         }
 
         public int Divide(int leftOperand, int rightOperand)
         {
-            return leftOperand/rightOperand;
+            this.answer = leftOperand / rightOperand;
+            return answer;
         }
     }
 }
