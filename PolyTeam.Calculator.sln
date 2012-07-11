@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolyTeam.Calculator", "PolyTeam.Calculator\PolyTeam.Calculator.csproj", "{BDD84332-246B-4E2B-A83C-7F169AB813A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolyTeam.Calculator.Test", "PolyTeam.Calculator.Test\PolyTeam.Calculator.Test.csproj", "{658903A6-7D8E-44A5-BCAE-6D2BAC807272}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDD84332-246B-4E2B-A83C-7F169AB813A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDD84332-246B-4E2B-A83C-7F169AB813A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDD84332-246B-4E2B-A83C-7F169AB813A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDD84332-246B-4E2B-A83C-7F169AB813A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{658903A6-7D8E-44A5-BCAE-6D2BAC807272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{658903A6-7D8E-44A5-BCAE-6D2BAC807272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{658903A6-7D8E-44A5-BCAE-6D2BAC807272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{658903A6-7D8E-44A5-BCAE-6D2BAC807272}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
