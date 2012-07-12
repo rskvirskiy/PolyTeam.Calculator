@@ -10,18 +10,21 @@ namespace CalculatorApplication
     {
         static void Main(string[] args)
         {
-            CalculatorEngine CalculatorApp;
-            CalculatorDistributor inOut;
+            var CalculatorApp = new CalculatorEngine();
+            var inOut = new CalculatorDistributor();
             Int32 leftArgument;
             Int32 rightArgument;
-            Int32 answer;
+            var answer = new Int32();
             leftArgument = inOut.GenericInput();
             string symbol = Console.ReadLine();
-            RightArgument = inOut.GenericInput();
+            rightArgument = inOut.GenericInput();
             if (symbol == "+")
             {
-                
+                answer = CalculatorApp.Add(leftArgument, rightArgument);
             }
+            inOut.GenericOutput(answer);
+
+
         }
     }
 }
