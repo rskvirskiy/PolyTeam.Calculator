@@ -5,8 +5,8 @@ using System.Text;
 
 namespace PolyTeam.Calculator
 {
-    public interface  ICalculatorOutput
+    public interface ICalculatorInput
     {
-        void Out(int answerValue);
+        void In();
     }
 }

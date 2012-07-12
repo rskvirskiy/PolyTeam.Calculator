@@ -5,8 +5,7 @@ using System.Text;
 
 namespace PolyTeam.Calculator
 {
-    public interface  ICalculatorOutput
+    class ConsoleInput
     {
-        void Out(int answerValue);
     }
 }

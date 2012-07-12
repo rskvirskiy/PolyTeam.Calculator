@@ -7,21 +7,23 @@ namespace PolyTeam.Calculator
 {
     public class CalculatorDistributor
     {
-        private readonly ICalculatorOutput outputDirection;
+        private readonly ICalculatorOutput outputting;
+
+        public int AnswerValue;
 
         public CalculatorDistributor (ICalculatorOutput outputDirection)
         {
-            this.outputDirection = outputDirection;
+            this.outputting = outputDirection;
         }
 
         public CalculatorDistributor ( )
         {
-            this.outputDirection = outputDirection;
+            this.outputting = new ConsoleOut();
         }
 
         public void GenericOutput ()
         {
-            outputDirection.Out();
+            this.outputting.Out(AnswerValue);
         }
     }
 }
