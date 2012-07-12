@@ -11,8 +11,6 @@ namespace PolyTeam.Calculator
 
         private readonly ICalculatorInput inputting;
 
-        public Int32 AnswerValue;
-
         private Int32 EnteredValue;
 
         public CalculatorDistributor (ICalculatorOutput outputDirection, ICalculatorInput inputDirection)
@@ -27,9 +25,14 @@ namespace PolyTeam.Calculator
             this.inputting = new ConsoleIn();
         }
 
-        public void GenericOutput ()
+        public void GenericOutput (Int32 answerValue)
         {
-            this.outputting.Out(AnswerValue);
+            this.outputting.Out(answerValue);
+        }
+
+        public void GenericInput ()
+        {
+            this.EnteredValue = inputting.In();
         }
     }
 }
