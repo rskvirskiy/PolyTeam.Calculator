@@ -36,9 +36,10 @@ namespace PolyTeam.Calculator
             this.outputting.Out(answerValue);
         }
 
-        public void GenericInput ()
+        public Int32 GenericInput ()
         {
             this.EnteredValue = inputting.In();
+            return this.EnteredValue;
         }
     }
 }
