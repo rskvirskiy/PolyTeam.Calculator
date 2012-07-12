@@ -7,6 +7,6 @@ namespace PolyTeam.Calculator
 {
     public interface ICalculatorInput
     {
-        void In();
+        Int32 In();
     }
 }

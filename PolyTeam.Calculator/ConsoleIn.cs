@@ -5,11 +5,11 @@ using System.Text;
 
 namespace PolyTeam.Calculator
 {
-    public class ConsoleOut:ICalculatorOutput
+    public class ConsoleIn:ICalculatorInput
     {
-        public void Out(Int32 answerValue)
+        public Int32 In()
         {
-            Console.WriteLine(" = ",answerValue);
+            return Convert.ToInt32(Console.ReadLine());
         }
     }
 }

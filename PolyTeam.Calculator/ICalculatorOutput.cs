@@ -7,6 +7,6 @@ namespace PolyTeam.Calculator
 {
     public interface  ICalculatorOutput
     {
-        void Out(int answerValue);
+        void Out(Int32 answerValue);
     }
 }

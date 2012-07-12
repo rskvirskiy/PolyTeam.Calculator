@@ -9,16 +9,22 @@ namespace PolyTeam.Calculator
     {
         private readonly ICalculatorOutput outputting;
 
-        public int AnswerValue;
+        private readonly ICalculatorInput inputting;
 
-        public CalculatorDistributor (ICalculatorOutput outputDirection)
+        public Int32 AnswerValue;
+
+        private Int32 EnteredValue;
+
+        public CalculatorDistributor (ICalculatorOutput outputDirection, ICalculatorInput inputDirection)
         {
             this.outputting = outputDirection;
+            this.inputting = inputDirection;
         }
 
         public CalculatorDistributor ( )
         {
             this.outputting = new ConsoleOut();
+            this.inputting = new ConsoleIn();
         }
 
         public void GenericOutput ()
