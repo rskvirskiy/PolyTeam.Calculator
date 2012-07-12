@@ -41,7 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CalculatorEngine.cs" />
-    <Compile Include="ICalculatorEngine.cs" />
+    <Compile Include="CalculatorDistributor.cs" />
+    <Compile Include="ConsoleIn.cs" />
+    <Compile Include="ConsoleOut.cs" />
+    <Compile Include="ICalculatorInput.cs" />
+    <Compile Include="ICalculatorOutput.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
