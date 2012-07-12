@@ -21,6 +21,20 @@ namespace PolyTeam.Calculator.Test
             //assert
             MockConsoleOutput.Verify(x => x.Out(0),Times.Once());
         }
+        [Test]
+        public void Should_ConsoleInAndOutCalledAtOnce_WhenGenericInCalled()
+        {
+            //arrenge
+            var MockConsoleInput = new Mock<ICalculatorInput>();
+            var MockConsoleOutput = new Mock<ICalculatorOutput>();
+            var Distributor = new CalculatorDistributor(MockConsoleOutput.Object,MockConsoleInput.Object);
+            //act
+            Distributor.GenericInput();
+            //assert
+            MockConsoleInput.Verify(x => x.In(), Times.Once());
+        }
+
+
 
     }
 }
