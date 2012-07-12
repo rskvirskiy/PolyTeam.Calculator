@@ -19,6 +19,12 @@ namespace PolyTeam.Calculator
             this.inputting = inputDirection;
         }
 
+        public CalculatorDistributor (ICalculatorOutput outputDirection)
+        {
+            this.outputting = outputDirection;
+            this.inputting = new ConsoleIn();
+        }
+
         public CalculatorDistributor ( )
         {
             this.outputting = new ConsoleOut();
