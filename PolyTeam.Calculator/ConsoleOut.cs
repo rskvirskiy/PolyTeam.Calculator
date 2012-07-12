@@ -10,6 +10,7 @@ namespace PolyTeam.Calculator
         public void Out(Int32 answerValue)
         {
             Console.WriteLine(" = ",answerValue);
+            Console.ReadLine();
         }
     }
 }
