@@ -8,30 +8,30 @@ namespace PolyTeam.Calculator
     public class CalculatorEngine
 
     {
-        public int answer;
+        private Int32 answer;
 
-        public int Add(int leftOperand,int rightOperand)
+        public Int32 Add(Int32 leftOperand,Int32 rightOperand)
         {
             this.answer = leftOperand + rightOperand;
-            return answer;
+            return this.answer;
         }
 
-        public int Substract(int leftOperand,int rightOperand)
+        public Int32 Substract(Int32 leftOperand,Int32 rightOperand)
         {
             this.answer = leftOperand - rightOperand;
-            return answer;
+            return this.answer;
         }
 
-        public int Multiply(int leftOperand, int rightOperand)
+        public Int32 Multiply(Int32 leftOperand, Int32 rightOperand)
         {
             this.answer = leftOperand * rightOperand;
-            return answer;
+            return this.answer;
         }
 
-        public int Divide(int leftOperand, int rightOperand)
+        public Int32 Divide(Int32 leftOperand, Int32 rightOperand)
         {
             this.answer = leftOperand / rightOperand;
-            return answer;
+            return this.answer;
         }
     }
 }

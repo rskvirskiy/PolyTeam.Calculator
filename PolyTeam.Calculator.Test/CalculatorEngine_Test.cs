@@ -1,5 +1,6 @@
 ﻿
 using NUnit.Framework;
+using System;
 
 namespace PolyTeam.Calculator.Test
 {
@@ -13,8 +14,8 @@ namespace PolyTeam.Calculator.Test
             var calculator = new CalculatorEngine();
 
             //act
-            int realExeption = calculator.Add(2, 3);
-            int simulateExeption = 2 + 3;
+            Int32 realExeption = calculator.Add(2, 3);
+            Int32 simulateExeption = 2 + 3;
 
             //assert
             Assert.AreEqual(realExeption,simulateExeption);
@@ -26,8 +27,8 @@ namespace PolyTeam.Calculator.Test
             var calculator = new CalculatorEngine();
 
             //act
-            int realExeption = calculator.Substract(7, 5);
-            int simulateExeption = 7 - 5;
+            Int32 realExeption = calculator.Substract(7, 5);
+            Int32 simulateExeption = 7 - 5;
 
             //assert
             Assert.AreEqual(realExeption, simulateExeption);
@@ -39,8 +40,8 @@ namespace PolyTeam.Calculator.Test
             var calculator = new CalculatorEngine();
 
             //act
-            int realExeption = calculator.Multiply(5, 3);
-            int simulateExeption = 5 * 3;
+            Int32 realExeption = calculator.Multiply(5, 3);
+            Int32 simulateExeption = 5 * 3;
 
             //assert
             Assert.AreEqual(realExeption, simulateExeption);
@@ -53,8 +54,8 @@ namespace PolyTeam.Calculator.Test
             var calculator = new CalculatorEngine();
 
             //act
-            int realExeption = calculator.Divide(35, 5);
-            int simulateExeption = 35 / 5;
+            Int32 realExeption = calculator.Divide(35, 5);
+            Int32 simulateExeption = 35 / 5;
 
             //assert
             Assert.AreEqual(realExeption, simulateExeption);
